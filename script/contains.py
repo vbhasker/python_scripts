@@ -10,5 +10,5 @@ snippet = args.snippet.lower()
 
 words = open('/usr/share/dict/words').readlines()
 
-matches = [word for word in words if word.lower().strip() in snippet]
+matches = [word.lower().strip() for word in words if snippet in word.lower().strip()]
 print(matches)
