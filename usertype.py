@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 users = [{'admin': True, 'active': False, 'name': 'Kevin'}, {'admin': True, 'active': True, 'name': 'Vinodh'},
          {'admin': False, 'active': False, 'name': 'Bob'}]
 

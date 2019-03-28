@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 from time import localtime, mktime, strftime
 
-
 start_time = localtime()
 print(f'Timer started at {strftime("%X", start_time)}')
 
