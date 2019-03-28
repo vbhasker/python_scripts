@@ -8,13 +8,7 @@ parser.add_argument('snippet', help='partial (or complete) string to search')
 args = parser.parse_args()
 snippet = args.snippet.lower()
 
-with open('/usr/share/dict/words') as f:
-    words = f.readlines()
+words = open('/usr/share/dict/words').readlines()
 
-matches = []
-
-for word in words:
-    if snippet in word.lower().strip():
-        matches.append(word.lower().strip())
-
+matches = [word for word in words if word.lower().strip() in snippet]
 print(matches)
